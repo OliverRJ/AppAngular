@@ -1,0 +1,60 @@
+<app-header></app-header>
+<app-column [data]="listUser" ></app-column>
+
+<!--
+    
+<ul>
+    <li *ngFor="let user of listUser">
+        <ng-container *ngTemplateOutlet="tplHello;context:{currentUser:user}">
+
+        </ng-container>
+    </li>
+</ul>
+
+
+<ng-template #tplHello let-mitUser="currentUser">
+    hola buenos dias {{mitUser?.name}} 😊
+</ng-template>
+-->
+<!--
+<div>
+    <ul *ngIf="results.length > 0 else tplNofound">
+        <li *ngFor="let item of results">
+            {{item}}
+        </li>
+    </ul>
+</div>
+
+<div>
+    <ul *ngIf="resultsFilter.length > 0 else tplNofound">
+        <li *ngFor="let item of results">
+            {{item}}
+        </li>
+    </ul>
+</div>
+<ng-template #tplNofound>
+    <p>No hay resultados</p>
+</ng-template>
+
+<div>
+    <img appImgBroken class="image" src="https://www.peru.travel/Contenido/AcercaDePeru/Imagen/es/1/0.0/Principal/Machu%20Picchu.jpg" alt="">
+    <img appImgBroken class="image" src="httpss://www.peru.travel/Contenido/AcercaDePeru/Imagen/es/1/0.0/Principal/Machu%20Picchu.jpg" alt="">
+    <img appImgBroken class="image" src="https://www.peru.travel/Contenido/AcercaDePeru/Imagen/es/1/0.0/Principal/Machu%20Picchu.jpg" alt="">
+</div>
+
+<div class="padre" [ngSwitch]="case" >
+
+    <div *ngSwitchCase="1" class="hijo">hola soy pedro</div>
+
+    <div *ngSwitchCase="2" class="hijo">hola soy maria</div>
+    
+    <div *ngSwitchCase="3" class="hijo">hola soy oli</div>
+
+    <div *ngSwitchDefault>Opocion por defecto</div>
+</div>
+
+
+<button (click)="changeText()">CAmbiar</button>
+<div *ngIf="showText">
+    hola
+</div>-->
